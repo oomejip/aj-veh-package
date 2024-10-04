@@ -18,7 +18,7 @@ A resource to randomly spawn packages in parked vehicles, that can be searched
 
 ### Preview's
 * AJ Preview : [streamable](https://streamable.com/bpjugf)
-* Jip Preview : [streamable](https://streamable.com/bpjugf)
+* Jip Preview : [streamable](https://streamable.com/daw44a)
 
 
 > [!NOTE]
