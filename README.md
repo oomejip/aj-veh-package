@@ -14,9 +14,12 @@ A resource to randomly spawn packages in parked vehicles, that can be searched
 ### Requirements
 * [ox_lib](https://github.com/overextended/ox_lib/releases)
 * [ox_inventory](https://github.com/overextended/ox_inventory/releases)
+* [qb-iventory](https://github.com/qbcore-framework/qb-inventory)
 
-### Preview
-[streamable](https://streamable.com/bpjugf)
+### Preview's
+* AJ Preview : [streamable](https://streamable.com/bpjugf)
+* Jip Preview : [streamable](https://streamable.com/bpjugf)
+
 
 > [!NOTE]
 > If you want to see debug prints from this script
