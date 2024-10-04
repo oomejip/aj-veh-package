@@ -10,10 +10,6 @@ server_scripts {'server/*.lua'}
 client_scripts {'client/*.lua'}
 file 'shared/config.lua'
 
-files {
-    'locales/*.json',
-}
-
 
 lua54 'yes'
 use_experimental_fxv2_oal 'yes'
