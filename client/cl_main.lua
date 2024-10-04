@@ -77,22 +77,38 @@ lib.onCache('vehicle', function(veh)
     if not veh then return end
     if Entity(veh).state.hasPackage then
         lib.print.debug('This vehicle has a package!')
+        lib.showTextUI(("[E] - Search in car"))
         Wait(0)
+
         while cache.vehicle do
             Wait(0)
-            if IsControlJustPressed(0, 38) then --E
-                if lib.progressCircle({
-                    duration = Config.searchTime,
-                    canCancel = true,
-                    position = 'bottom',
-                    disable = {
-                        car = true,
-                        move = true
-                    },
-                    label = Config.searchLabel
-                }) then
-                    TriggerServerEvent('aj-veh-package:server:SearchedPackage')
-                    break
+
+            -- Controleer of de speler nog in het voertuig zit
+            if not IsPedInAnyVehicle(PlayerPedId(), false) then
+                lib.hideTextUI()  -- Verberg de tekst als de speler uit de auto is
+                break  -- Breek de lus
+            end
+
+            if IsControlJustPressed(0, 38) then
+                local success = exports["SK-Minigames"]:StartMinigame("arrowClicker", {4, 45, "Lockpick", 1})
+                --local success = lib.skillCheck({'easy', 'easy', {areaSize = 60, speedMultiplier = 2}, 'hard'}, {'w', 'a', 's', 'd'})
+                if success then
+                    lib.hideTextUI()
+                    if lib.progressCircle({
+                        duration = Config.searchTime,
+                        canCancel = true,
+                        position = 'bottom',
+                        disable = {
+                            car = true,
+                            move = true
+                        },
+                        label = Config.searchLabel
+                    }) then
+                        TriggerServerEvent('aj-veh-package:server:SearchedPackage')
+                        break
+                    else
+                        print("fail")
+                    end
                 end
             end
         end
