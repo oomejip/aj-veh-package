@@ -1,7 +1,7 @@
 return {
     debug = false,
     inventory = "qb", -- "ox" for ox-inventory or "qb" for qb-inventory
-    percent = 1, -- A 1 in x % for a package to spawn
+    percent = 25, -- A 1 in x % for a package to spawn
     searchTime = 5000, -- How long the progress bar is
     searchLabel = 'Searching for stuff!!', -- Label of the progress bar
     minigame = 'ox', -- "ox" for ox_lib or "sk" for sk-minigame
