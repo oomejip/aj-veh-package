@@ -12,8 +12,9 @@ A resource to randomly spawn packages in parked vehicles, that can be searched
 * Config Dev Approved!
 
 ### Requirements
-* [ox_lib](https://github.com/overextended/ox_lib/releases)
-* [ox_inventory](https://github.com/overextended/ox_inventory/releases)
+* [ox_lib](https://github.com/overextended/ox_lib)
+* [ox_inventory](https://github.com/overextended/ox_inventory)
+* [qb-inventory](https://github.com/qbcore-framework/qb-inventory)
 
 ### Preview
 [streamable](https://streamable.com/bpjugf)
@@ -23,3 +24,6 @@ A resource to randomly spawn packages in parked vehicles, that can be searched
 > You MUST put `set ox:printlevel:aj-veh-package "debug"` in your `server.cfg`
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/ihyajb)
+
+
+
